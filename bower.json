@@ -1,0 +1,29 @@
+{
+  "name": "newprovidence",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Andrey"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.3.1",
+    "bootstrap": "^4.1.1"
+  },
+  "overrides": {
+    "bootstrap": {
+      "main": [
+        "./dist/js/bootstrap.min.js",
+        "./dist/css/bootstrap.min.css"
+      ]
+    }
+  }
+}
