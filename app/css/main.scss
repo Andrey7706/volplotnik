@@ -158,10 +158,10 @@ h3 {
   color: #fff;
   text-transform: uppercase;
   text-align: center;
-  .logo {
+  .sidebar-logo {
     padding-top: 25px;
   }
-  .title {
+  .sidebar-title {
     margin-top: 20px;
     font-size: 15px;
     line-height: 20px;
@@ -333,9 +333,7 @@ h3 {
     font-size: 50px;
     line-height: 80px;
   }
-  .carousel-nav .carousel-cell.is-nav-selected {
-    background: #ED2;
-  }
+
   /* Блок с планами */
   .plan {
     margin-top: 20px;
@@ -480,7 +478,6 @@ h3 {
     margin-top: 20px;
     margin-bottom: 15px;
   }
-
   .built-item {
     padding-left: 30px;
     padding-right: 20px;
@@ -506,12 +503,13 @@ h3 {
       }
     }
   }
-  .built-video img {
+  .built-video {
+    position: relative;
     &:before {
       content: "Вологодская область, село Устье-Кубенское";
       position: absolute;
       color: #fff;
-      bottom: 25px;
+      bottom: 15px;
       left: 25px;
     }
   }
@@ -672,7 +670,7 @@ h3 {
   .sidebar {
     width: 83px;
   }
-  .logo img {
+  .sidebar-logo img {
     width: 70%;
   }
   .sidebar-title {
