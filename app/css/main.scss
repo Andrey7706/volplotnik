@@ -505,6 +505,7 @@ h3 {
   }
   .built-video {
     position: relative;
+    margin-left: 10px;
     &:before {
       content: "Вологодская область, село Устье-Кубенское";
       position: absolute;
@@ -636,6 +637,12 @@ h3 {
   }
 }
 
+@media (min-width: 768px) {
+  .small-menu {
+    display: none;
+  }
+}
+
 @media (max-width: 1499.98px) {
   .filter_active {
     display: none;
@@ -645,7 +652,7 @@ h3 {
   }
 }
 
-@media (max-width: 1199.98px) {
+@media (max-width: 1200px) {
   .sidebar {
     width: 220px;
   }
@@ -698,9 +705,15 @@ h3 {
   }
 }
 
-@media (max-width: 992px) {
+@media (max-width: 991.98px) {
   .filter {
     padding-right: 30px;
+  }
+  .picking {
+    .picking_left {
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
   }
 }
 
@@ -717,11 +730,19 @@ h3 {
   h1 {
     font-size: 30px;
   }
-  .slider {
-    margin-right: 10px;
+  .content {
+    .slider {
+      margin-left: 0;
+    }
   }
+
   .built-img {
     margin-top: 20px;
+  }
+  .built {
+    .built-video {
+      margin-left: 0;
+    }
   }
   .small-menu {
     .navbar-dark {
@@ -740,12 +761,6 @@ h3 {
   }
 }
 
-@media (min-width: 768px) {
-  .small-menu {
-    display: none;
-  }
-}
-
 @media (max-width: 552px) {
   .delivery {
     .delivery-center {
@@ -761,12 +776,18 @@ h3 {
     }
   }
   .picking {
-    margin-right: 0;
-    margin-left: 0;
-    padding-left: 0;
-    .picking-title__left, .picking-title__right {
-      background-image: none;
-      padding-left: 20px;
+    .picking_left {
+      margin-right: 0;
+      .picking-title__left {
+        background-image: none;
+        padding-left: 20px;
+      }
+    }
+    .picking-right {
+      .picking-title__right {
+        background-image: none;
+        padding-left: 20px;
+      }
     }
   }
   h2 {
