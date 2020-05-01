@@ -1,4 +1,8 @@
-# Created by .ignore support plugin (hsz.mobi)
-.idea
-node_modules/
-package-lock.json
+/node_modules/
+/.git/
+/bower_components/
+/.idea/
+/**/*.psd
+/**/package-lock.json
+/**/Thumbs.db
+/**/.DS_Store
